@@ -1,0 +1,80 @@
+
+body{
+   margin: 0;
+   padding: 0;
+   overflow-y: scroll;
+}
+
+.overlay{
+    background: linear-gradient(to bottom, #447993, #314F69, #112F40);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.footer-image{
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+}
+
+.right-sky{
+    position: fixed;
+    width: 15%;
+    right: 0px;
+}
+
+.left-sky{
+    position: fixed;
+    width: 15%;
+    left: 0px;
+}
+
+.central-content{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60%;
+    min-height: 100vh;
+    transform: translate(-50%, 0%);
+    background: linear-gradient(to bottom, #18303f94, #0f222d8c);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.app-logo-container{
+    display: flex;
+    justify-content: center;
+} 
+
+.app-content{
+    padding: 5%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.app-logo{
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+     
+    .right-sky,  .left-sky{
+        width: 40%;
+    }
+
+}
+
+h1, h4, b {
+    color:  #f29d1c;
+}
+
+a {
+    text-decoration: none;
+    color:  #f29d1c;
+}
